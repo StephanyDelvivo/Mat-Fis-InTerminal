@@ -1,5 +1,6 @@
 import './interfaces.ts';
-import { Fisic} from './functionsFisic';
+import {ThemesFisic} from './functions/functionsFisic';
+import {ThemesMath} from './functions/functionsMath';
 
 export var readline = require('readline')
 
@@ -13,9 +14,13 @@ function SelectOperation() {
             (value: any) => {
 
                 if (value == "F" || value == "f") {
-                    Fisic(name)
+                    ThemesFisic(name)
 
                 }
+                if (value == "M" || value == "m"){
+                    ThemesMath(name)
+                }
+
             })
 
     })

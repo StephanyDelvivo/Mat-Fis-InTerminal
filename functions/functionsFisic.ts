@@ -1,4 +1,5 @@
-import {read} from './index';
+import {read} from '../index';
+
 
 function CalculateQuantity(massa: number, calorEspecifico: number, variacaoDeTemperatura: number, name: string) {
     console.log(`Q = ${massa * calorEspecifico * variacaoDeTemperatura}. Bons estudos ${name}!`)
@@ -13,7 +14,7 @@ function CalculateHeatCapacity(quantidadeDeCalorAbs: number, variacaoDeTemperatu
 };
 
 
-export function Fisic(name: string) {
+export function ThemesFisic(name: string) {
     console.log('entrou')
     read.question(`Encontramos Calorimetria. Suas opcões são 1 para Quantidade, 2 para Calor Específico e 3 para Capacidade Térmica. Caso não queira, é só digitar S para sair.`,
         (value: string) => {

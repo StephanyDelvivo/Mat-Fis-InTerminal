@@ -17,3 +17,10 @@ interface HeatCapacity {
 interface Name {
     name: string
 }
+
+interface DistanceTwoPoints {
+    xPonto1: number, 
+    xPonto2: number, 
+    yPonto1: number, 
+    yPonto2: number
+}
